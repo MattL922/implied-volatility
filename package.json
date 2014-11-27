@@ -1,0 +1,33 @@
+{
+  "name": "implied-volatility",
+  "version": "1.0.0",
+  "description": "Determine implied volatility of options based on their prices",
+  "main": "implied-volatility.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattL922/implied-volatility.git"
+  },
+  "keywords": [
+    "option",
+    "price",
+    "implied",
+    "volatility",
+    "black",
+    "scholes"
+  ],
+  "author": "Matt Loppatto <mattloppatto@gmail.com> (https://github.com/MattL922)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattL922/implied-volatility/issues"
+  },
+  "homepage": "https://github.com/MattL922/implied-volatility",
+  "devDependencies": {
+    "mocha": "2.0.1"
+  },
+  "dependencies": {
+    "black-scholes": "1.1.0"
+  }
+}
