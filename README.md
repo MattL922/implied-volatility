@@ -17,4 +17,10 @@ Determine implied volatility of options based on their prices
 var iv = require("implied-volatility");
 
 iv.getImpliedVolatility(2, 101, 100, .1, .0015, "call"); // 0.11406250000000001 (11.4%)
+
+// To confirm this volatility:
+
+var bs = require("black-scholes");
+
+bs.blackScholes(101, 100, .1, .1140625, .0015, "call"); // 2.009799330328903
 ```
