@@ -20,7 +20,7 @@ var bs = require("black-scholes");
  * @param {Number} [estimate=.1] An initial estimate of implied volatility
  * @returns {Number} The implied volatility estimate
  */
-function getImpliedVolatility(expectedCost, s, k, t, r, callPut, estimate)
+function getImpliedVolatility(expectedCost, s, k, t, r, callPut, estimate, precision)
 {
   estimate = estimate || .1;
   var low = 0;
@@ -46,7 +46,7 @@ function getImpliedVolatility(expectedCost, s, k, t, r, callPut, estimate)
       if(!isFinite(estimate)) estimate = low * 2;
     }
   }
-  return estimate;
+  return estimate.toPrecision(precision);
 }
 
 module.exports = {
